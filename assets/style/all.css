@@ -173,6 +173,27 @@ a {
   position: absolute;
   left: 16px; }
 
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #AA0601;
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s; }
+  .dropdownMenu.active {
+    max-height: 200px; }
+  .dropdownMenu li {
+    border-top: 1px solid #fff; }
+  .dropdownMenu a {
+    display: block;
+    text-align: center;
+    padding: 10px 0; }
+
 /* footer */
 .footer {
   background-color: #AA0601;
@@ -741,6 +762,26 @@ a {
   @media (max-width: 767px) {
     .checkboxGroup {
       margin-bottom: 20px; } }
+  .checkboxGroup input[type="checkbox"] + label {
+    display: block;
+    cursor: pointer;
+    line-height: 1; }
+  .checkboxGroup input[type="checkbox"] {
+    display: none; }
+  .checkboxGroup input[type=checkbox] + label::before {
+    content: "\2714";
+    border: 1px solid #000;
+    border-radius: 10%;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding: 1px 0 1px 3px;
+    margin-right: 8px;
+    color: transparent; }
+  .checkboxGroup input[type="checkbox"]:checked + label:before {
+    background-color: #AA0601;
+    border-color: #AA0601;
+    color: #fff; }
 
 .submitButton {
   display: block;
@@ -756,6 +797,8 @@ a {
       width: 136px;
       padding-top: 7px;
       padding-bottom: 7px; } }
+  .submitButton:hover {
+    background-color: #650300; }
 
 .blogNavbar-lg {
   color: #fff;

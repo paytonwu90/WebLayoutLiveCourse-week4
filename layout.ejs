@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-lg">
+      <a href="index.html"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo"></a>
+      <ul class="menu">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="blog.html">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    </div>
+    <div class="navbar-sm">
+      <a class="hamburger" href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-menu.svg" alt="icon-menu"></a>
+      <a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo"></a>
+      <ul class="dropdownMenu">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="blog.html">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <%- contents %>
+
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-topContent">
+        <div class="footer-content-info">
+          <ul class="footer-menu">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="blog.html">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+          </ul>
+          <ul class="footer-contactInfo">
+            <li>
+              <div class="imgWrapper">
+                <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="">
+              </div>
+              <a href="tel:0800-000-000">0800-000-000</a>
+            </li>
+            <li>
+              <div class="imgWrapper">
+                <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="">
+              </div>
+              <a href="mailto:glasses@business.com">glasses@business.com</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="socialIcons">
+          <li>
+            <a href="#">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottomContent">
+        <a href="index.html"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo"></a>
+        <div class="footer-copyright">
+          <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="footer-privacy">
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="./assets/js/jquery-3.5.0.min.js"></script>
+</body>
+
+</html>

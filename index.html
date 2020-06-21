@@ -12,17 +12,23 @@
 <body>
   <nav class="navbar">
     <div class="navbar-lg">
-      <a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo"></a>
+      <a href="index.html"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo"></a>
       <ul class="menu">
         <li><a href="#">系列鏡框</a></li>
         <li><a href="#">門市據點</a></li>
-        <li><a href="#">部落格</a></li>
+        <li><a href="blog.html">部落格</a></li>
         <li><a href="#">常見問題</a></li>
       </ul>
     </div>
     <div class="navbar-sm">
       <a class="hamburger" href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-menu.svg" alt="icon-menu"></a>
       <a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo"></a>
+      <ul class="dropdownMenu">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="blog.html">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -186,20 +192,20 @@
     <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     <form action="">
       <div class="inputGroup">
-        <label for="" class="inputDesc">姓名</label>
-        <input type="text" name="" id="" placeholder="陳小明">
+        <label for="name" class="inputDesc">姓名</label>
+        <input type="text" name="" id="name" placeholder="陳小明">
       </div>
       <div class="inputGroup">
-        <label for="" class="inputDesc">聯絡電話</label>
-        <input type="text" name="" id="" placeholder="0912-345-678">
+        <label for="phoneNumber" class="inputDesc">聯絡電話</label>
+        <input type="text" name="" id="phoneNumber" placeholder="0912-345-678">
       </div>
       <div class="inputGroup">
-        <label for="" class="inputDesc">電子郵件</label>
-        <input type="text" name="" id="" placeholder="example@email.com">
+        <label for="email" class="inputDesc">電子郵件</label>
+        <input type="text" name="" id="email" placeholder="example@email.com">
       </div>
       <div class="inputGroup">
-        <label for="" class="inputDesc">意見反應</label>
-        <textarea name="" id="" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>
+        <label for="advice" class="inputDesc">意見反應</label>
+        <textarea name="" id="advice" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>
       </div>
       <div class="checkboxGroup">
         <input type="checkbox" name="" id="agreePrivacyPolicy">
@@ -216,10 +222,10 @@
       <div class="footer-topContent">
         <div class="footer-content-info">
           <ul class="footer-menu">
-            <li><a href="#">首頁</a></li>
+            <li><a href="index.html">首頁</a></li>
             <li><a href="#">系列鏡框</a></li>
             <li><a href="#">門市據點</a></li>
-            <li><a href="#">部落格</a></li>
+            <li><a href="blog.html">部落格</a></li>
             <li><a href="#">常見問題</a></li>
           </ul>
           <ul class="footer-contactInfo">
@@ -256,7 +262,7 @@
         </ul>
       </div>
       <div class="footer-bottomContent">
-        <a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo"></a>
+        <a href="index.html"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo"></a>
         <div class="footer-copyright">
           <p>Copyright © 2020 Glasses.All rights reserved.</p>
           <ul class="footer-privacy">
@@ -269,6 +275,7 @@
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script src="./assets/js/jquery-3.5.0.min.js"></script>
 </body>
 
 </html>

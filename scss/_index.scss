@@ -347,6 +347,33 @@
     @include mobile() {
         margin-bottom: 20px;
     }
+    input[type="checkbox"] + label {
+        display: block;
+        cursor: pointer;
+        line-height: 1;
+    }
+      
+    input[type="checkbox"] {
+        display: none;
+    }
+      
+    input[type=checkbox] + label::before {
+        content: "\2714";
+        border: 1px solid #000;
+        border-radius: 10%;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        padding: 1px 0 1px 3px;
+        margin-right: 8px;
+        color: transparent;
+    }
+      
+    input[type="checkbox"]:checked + label:before {
+        background-color: $primary;
+        border-color: $primary;
+        color: #fff;
+    }
 }
 .submitButton {
     display: block;
@@ -361,5 +388,8 @@
         width: 136px;
         padding-top: 7px;
         padding-bottom: 7px;
+    }
+    &:hover {
+        background-color: $primary-dark;
     }
 }

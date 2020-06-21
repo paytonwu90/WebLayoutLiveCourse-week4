@@ -46,6 +46,28 @@
     position: absolute;
     left: 16px;
 }
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $primary;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.8s;
+    &.active {
+        max-height: 200px;
+    }
+    li {
+        border-top: 1px solid #fff;
+    }
+    a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
 
 /* footer */
 .footer {
